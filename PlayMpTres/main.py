@@ -26,3 +26,4 @@ opcao = playListDeMusicas.get(escolhaMusica)
 print('Musica '+' '+opcao+' '+'selecionda')
 print('O audio está sendo reproduzido...')
 playsound(pasta+'/'+opcao)
+
