@@ -11,7 +11,7 @@ while (escolha != '0'):
         somaNotas = 0
 
         for i in range(qntDeNotas):
-            nota = float(input(f"{i}° Nota: "))
+            nota = float(input(f"{i+1}° Nota: "))
             somaNotas += nota
 
         mediaAritmetica = (somaNotas)/qntDeNotas
@@ -20,14 +20,18 @@ while (escolha != '0'):
         qntDeNotas = int(
             input("\n---Media Aritmetica (Com peso)---\n\nQnt de notas: "))
         somaPeso = 0
+        somaNotas = 0
         for i in range(qntDeNotas):
-            nota = float(input(f"{i}° Nota: "))
-            peso = float(input(f"{i}° Peso: "))
+            nota = float(input(f"{i+1}° Nota: "))
+            peso = float(input(f"{i+1}° Peso: "))
 
-            somaNotas += (nota*peso)
+            calc = (nota*peso)
+            somaNotas += calc
             somaPeso += peso
 
             mediaAritmetica = (somaNotas)/somaPeso
+
+            print(f"A Média Aritmética é: {mediaAritmetica:.2f}")
 
     elif (escolha == '0'):
         break
