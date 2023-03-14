@@ -6,4 +6,4 @@ salario_bonus = (totalDeVendas*15)/100
 
 total_salario = salarioFixo+salario_bonus
 
-print(f"Total: {total_salario:.f}")
+print(f"Total: R$ {total_salario:.f}")
