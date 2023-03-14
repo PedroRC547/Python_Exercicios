@@ -5,4 +5,4 @@ valorPorHora = float(input("Valor por hora: "))
 calc = valorPorHora * horasTrabalhadas
 
 print(f"NUMBER = {numeroDoTrabalhador}")
-print(f"SALARY = U$ {calc}")
+print(f"SALARY = U$ {calc:.2f}")
